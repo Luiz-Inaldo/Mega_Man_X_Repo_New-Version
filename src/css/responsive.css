@@ -73,6 +73,10 @@
         padding: 15px 30px;
     }
 
+    #home .home_paragraph p {
+        font-size: 20px;
+    }
+
     .title {
         font-size: 50px;
         text-align: center;
@@ -80,14 +84,23 @@
 
     #about p {
         padding: 30px 15px;
+        font-size: 20px;
     }
 
     .character {
         flex-direction: column;
     }
 
+    .character .description p {
+        font-size: 20px;
+    }
+
     #zero {
         flex-direction: column-reverse;
+    }
+
+    .homeback a {
+        font-size: 17px;
     }
 
     .main_container {

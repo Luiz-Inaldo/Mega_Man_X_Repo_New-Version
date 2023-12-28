@@ -217,7 +217,7 @@ main {
 /* footer */
 
 footer {
-    padding: 20px 0;
+    padding: 10px 0;
     background: #4080c9;
     text-align: center;
     font-family: "Calibri";
@@ -226,7 +226,7 @@ footer {
 footer h2,
 footer p {
     color: #fdfdfd;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 footer p {
