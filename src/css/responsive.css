@@ -70,12 +70,12 @@
     }
 
     .title {
+        font-size: 50px;
         text-align: center;
     }
 
     #about p {
         padding: 30px 15px;
-        text-align: center;
     }
 
     .character {
@@ -93,5 +93,13 @@
     .trailer-video {
         height: 300px;
     }
+
+}
+
+
+/* Mobile (max-width 375px) */
+@media (max-width: 375px){
+
+
 
 }
