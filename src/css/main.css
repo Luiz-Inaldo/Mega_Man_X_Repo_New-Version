@@ -1,10 +1,17 @@
 /* global and import configurations */
 
-@import url(/src/css/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    list-style: none;
+}
 
 html {
     scroll-behavior: smooth;
@@ -151,7 +158,7 @@ main {
 }
 
 .character img {
-    /* max-width: 600px; */
+    max-width: 380px;
     max-height: 600px;
     flex: 1 1 0;
 }
@@ -289,16 +296,6 @@ footer span {
 #gameplay {
     margin-bottom: 5rem;
 }
-
-/* .logo_game {
-    max-width: 500px;
-    margin: 0 auto 2.5rem;
-}
-
-.logo_game img {
-    width: 500px;
-    height: 200px;
-} */
 
 .subtitle {
     margin-bottom: 2.5rem;
