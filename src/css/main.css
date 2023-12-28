@@ -237,6 +237,52 @@ footer span {
 
 /* Download page */
 
+.homeback {
+    height: 80px;
+    line-height: 80px;
+    font-family: "Calibri";
+}
+
+.homeback a {
+    font-size: 20px;
+    color: #fdfdfd;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.homeback a:hover {
+    color: #d0d0d0;
+    transition: .5s;
+}
+
+.game_title {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.main_container {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+}
+
+.logo_container {
+    flex: 2 1 0;
+}
+
+.logo_container img {
+    width: 100%;
+    max-height: 797px;
+}
+
+.others_container {
+    flex: 1 1 0;
+}
+
 #logo_game,
 #informations,
 #download_links,
@@ -244,7 +290,7 @@ footer span {
     margin-bottom: 5rem;
 }
 
-.logo_game {
+/* .logo_game {
     max-width: 500px;
     margin: 0 auto 2.5rem;
 }
@@ -252,14 +298,7 @@ footer span {
 .logo_game img {
     width: 500px;
     height: 200px;
-}
-
-.homeback {
-    display: flex;
-    gap: 1rem;
-    height: 80px;
-    align-items: center;
-}
+} */
 
 .subtitle {
     margin-bottom: 2.5rem;
