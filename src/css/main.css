@@ -19,13 +19,13 @@ html {
 
 p {
     color: #333;
-    line-height: 1.5;
 }
 
 /* header configurations */
 
 header {
     position: fixed;
+    z-index: 4;
     top: 0;
     width: 100%;
     height: 80px;
@@ -91,19 +91,30 @@ main {
 }
 
 #home .main_banner {
+    position: relative;
     background: url('/src/img/background.png');
     background-position: center;
     background-size: cover;
     padding: 120px 60px;
     margin-bottom: 30px;
-    height: 80vh;
+    height: 50vh;
     display: flex;
 }
+
+#home .main_banner::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
 
 #home .main_banner h1 {
     color: #f1f1f1;
     font-size: 80px;
-    text-shadow: 4px 4px 1px #000;
+    filter: drop-shadow(0 0 4px #070707);
     letter-spacing: 2px;
     width: 100%;
     text-align: center;
@@ -117,7 +128,7 @@ main {
 }
 
 #home .home_paragraph p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -129,7 +140,7 @@ main {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
     border-bottom: 2px solid #ddd;
@@ -138,7 +149,7 @@ main {
 #about p {
     text-align: justify;
     padding: 30px 60px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -152,14 +163,14 @@ main {
 .character {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 6rem;
     padding: 30px 50px;
     margin-bottom: 3.5rem;
 }
 
 .character img {
-    max-width: 380px;
-    max-height: 600px;
+    max-width: 350px;
+    max-height: 450px;
     flex: 1 1 0;
 }
 
@@ -169,14 +180,14 @@ main {
 
 .character .description h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 2rem;
 }
 
 .character .description p {
     padding: 0 1.5rem;
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
     color: #333;
 }
@@ -191,11 +202,13 @@ main {
 #games p {
     text-align: justify;
     padding: 30px 60px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
 #games .games_list {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 2rem;
     display: flex;
     gap: 1.5rem;
@@ -205,6 +218,10 @@ main {
 
 .games_list .game {
     transition: .2s;
+}
+
+.games_list .game img {
+    width: 200px;
 }
 
 .games_list .game:hover {
@@ -265,7 +282,7 @@ footer span {
 
 .game_title {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     padding: 2rem;
     border-bottom: 1px solid #ddd;
@@ -278,12 +295,12 @@ footer span {
 }
 
 .logo_container {
-    flex: 2 1 0;
+    flex: 1 1 0;
 }
 
 .logo_container img {
     width: 100%;
-    max-height: 797px;
+    height: 500px;
 }
 
 .others_container {
@@ -299,7 +316,7 @@ footer span {
 
 .subtitle {
     margin-bottom: 2.5rem;
-    font-size: 35px;
+    font-size: 30px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -322,16 +339,18 @@ footer span {
 .btn-download {
     padding: 5px 10px;
     font-size: 15px;
+    border: 1px solid transparent;
     border-radius: 5px;
     background-color: #4080c9;
-    border: none;
     color: #fff;
     cursor: pointer;
     transition: .5s;
 }
 
 .btn-download:hover {
-    opacity: 0.8;
+    background: transparent;
+    border: 1px solid #4080c9;
+    color: #4080c9;
     transition: .5s;
 }
 
